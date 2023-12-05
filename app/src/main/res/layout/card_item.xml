@@ -12,7 +12,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="71dp"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -24,7 +24,7 @@
             tools:ignore="RtlSymmetry">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="315dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"
@@ -38,18 +38,18 @@
                     android:layout_weight="1"
                     android:text="TextView"
                     android:textColor="@color/dark_green"
-                    android:textSize="20sp"
+                    android:textSize="22sp"
                     tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textViewAmount"
-                    android:layout_width="117dp"
+                    android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
                     android:text="TextView"
                     android:textColor="@color/dark_green"
-                    android:textSize="20sp" />
+                    android:textSize="22sp" />
             </LinearLayout>
 
             <TextView
@@ -58,21 +58,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
                 android:text="TextView"
-                android:textColor="#657660" />
+                android:textColor="#657660"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/imageButtonEdit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#00FFFFFF"
-            android:contentDescription="@string/edit_product_button"
-            app:srcCompat="@drawable/edit" />
-
-        <ImageButton
             android:id="@+id/imageButtonDelete"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="45dp"
+            android:layout_height="48dp"
             android:layout_marginRight="10dp"
             android:backgroundTint="#00FFFFFF"
             android:contentDescription="@string/delete_button_description"

@@ -15,7 +15,7 @@ import java.util.List;
 public class ListActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     ProductAdapter productAdapter = new ProductAdapter(this, productList);
-    static List<Product> productList = new ArrayList<>();;
+    static List<Product> productList = new ArrayList<>();
     ImageButton menuButton;
     ImageButton deleteButton;
     ImageButton addButton;
@@ -32,7 +32,11 @@ public class ListActivity extends AppCompatActivity {
         addButton = findViewById(R.id.addButton);
         recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+        recyclerView.setAdapter(productAdapter);
+        productAdapter.setOnItemClickListener(position -> {
+            productList.remove(position);
+            productAdapter.notifyItemRemoved(position);
+        });
 
         Product product = (Product) getIntent().getSerializableExtra("product");
         if (product != null){
