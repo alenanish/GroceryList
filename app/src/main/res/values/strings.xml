@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GroceryList</string>
+    <string name="add_button_description">add new product</string>
+    <string name="delete_button_description">delete product</string>
+    <string name="menu_button_description">open menu</string>
+    <string name="app_logo">app logo</string>
+    <string name="main_h1">Список продуктов</string>
+    <string name="main_h2_name">Название</string>
+    <string name="main_h2_amount">Кол-во</string>
+    <string name="main_h2_measure">Ед.</string>
+    <string name="start_button">За покупками!</string>
+    <string name="second_h1">Добавить продукты</string>
+    <string name="label_name">Название товара</string>
+    <string name="label_amount">Количество</string>
+    <string name="label_measure">Единицы</string>
+    <string name="label_info">Комментарии</string>
+    <string name="edit_product_button">edit product</string>
+</resources>
